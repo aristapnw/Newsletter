@@ -1,0 +1,69 @@
+site_name: Arista Newsletter
+site_url: https://Arista-Pacific-Northwest-Region.github.io/Newsletter/
+repo_name: aristapnw/Newsletter
+docs_dir: docs/
+edit_uri: edit/main/docs/
+
+plugins:
+  - search
+  - social
+
+theme:
+  name: material
+  logo: img/Arista_Logo_copy.png
+  favicon: img/arista_logo.png
+  # All the items below MUST be indented under 'theme'
+  palette:
+    - primary: custom
+      primary_color: "#004a99" # Arista Official Blue
+      accent: custom
+      accent_color: "#004a99"  
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features: 
+    - content.footnote.tooltips
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - social
+  icon:
+    admonition:
+      quote: octicons/quote-16
+      note: octicons/tag-16
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - toc: 
+      permalink: true  
+  - pymdownx.tasklist:  
+      custom_checkbox: true
+
+extra_css:
+  - css/extra.css
+
+nav:
+  - "Current Newsletter": index.md
+  # - "Past Newsletters":
+  #     - "September 2026": archive/September-2026.md
+  #     - "August 2026": archive/August-2026.md
+  #     - "June 2026": archive/June-2026.md
+  #     - "May 2026": archive/May-2026.md
+  #     - "April 2026": archive/April-2026.md
+  #     - "March 2026": archive/March-2026.md
+  #     - "February 2026": archive/February-2026.md
+  #     - "January 2026": archive/January-2026.md
+  #     - "November 2025": archive/November-2025.md
+
+copyright: "Copyright &copy; 2026 Arista Networks. You are receiving this newsletter as a customer of Arista."
+

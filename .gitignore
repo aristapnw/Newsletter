@@ -1,0 +1,6 @@
+.DS_Store
+.cache/
+.venv/
+uv.locl
+__pycache__/
+*.pyc
