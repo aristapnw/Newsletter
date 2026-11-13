@@ -2,6 +2,7 @@ site_name: Arista Newsletter
 site_url: https://aristapnw.github.io/Newsletter/
 repo_name: aristapnw/Newsletter
 docs_dir: docs/
+repo_url: https://github.com/aristapnw/Newsletter
 edit_uri: edit/main/docs/
 
 plugins:
