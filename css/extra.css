@@ -1,0 +1,252 @@
+/* --- 1. HEADER & LOGO BRANDING --- */
+
+.md-header {
+    background-color: #004a99 !important;
+}
+
+.md-header__inner {
+    display: flex;
+    justify-content: flex-start !important;
+}
+
+.md-logo img {
+    height: 2.0rem;
+    width: auto;
+    filter: brightness(0) invert(1);
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.md-header__title {
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-left: 0 !important;
+}
+
+.md-search {
+    margin-left: auto;
+}
+
+.md-search__form {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.md-search__input {
+    color: #ffffff !important;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 1;
+}
+
+.md-search__icon {
+    color: #ffffff !important;
+}
+
+.md-search__input:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* --- 2. NAVIGATION & SIDEBAR --- */
+
+.md-sidebar {
+    top: 48px;
+}
+
+.md-nav__link {
+    color: rgba(0, 74, 153, 0.8) !important;
+}
+
+.md-nav__link--active,
+.md-nav__link:hover {
+    color: #004a99 !important;
+    font-weight: bold;
+}
+
+/* --- 3. BODY CONTENT & LINKS --- */
+
+.md-typeset a {
+    color: #004a99;
+}
+
+.md-typeset a:hover {
+    color: #003a7a;
+    text-decoration: underline;
+}
+
+.md-typeset .md-button {
+    border-color: #004a99;
+    color: #004a99;
+}
+
+.md-typeset .md-button:hover {
+    background-color: #004a99;
+    border-color: #004a99;
+    color: #ffffff;
+}
+
+/* Force "Let's Connect" button to Arista Navy */
+.md-typeset .md-button--primary {
+    background-color: #004a99 !important;
+    border-color: #004a99 !important;
+    color: #ffffff !important;
+}
+
+/* Darker navy hover effect for the button */
+.md-typeset .md-button--primary:hover {
+    background-color: #003a7a !important;
+    border-color: #003a7a !important;
+}
+
+/* --- 4. TECH TIP (ADMONITIONS) --- */
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+    border: 1px solid #004a99;
+    border-left-width: 4px;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+    background-color: #004a99 !important;
+    color: #ffffff !important;
+}
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+    background-color: #ffffff !important;
+    -webkit-mask-image: var(--md-admonition-icon--info);
+    mask-image: var(--md-admonition-icon--info);
+}
+
+/* --- 5. UI ELEMENTS (BACK TO TOP) --- */
+
+.md-top {
+    background-color: #004a99;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Lighter Arista Blue hover state */
+.md-top:hover {
+    background-color: #1a6bc2 !important;
+}
+
+.md-top svg {
+    fill: #ffffff !important;
+}
+
+/* --- 6. TABLE STYLING & ZEBRA STRIPES --- */
+
+.md-typeset table:not([class]) {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
+}
+
+.md-typeset thead {
+    background-color: #004a99 !important;
+    color: #ffffff;
+}
+
+.md-typeset thead th {
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 12px !important;
+    text-align: center !important;
+}
+
+.md-typeset tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.md-typeset tbody tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+}
+
+.md-typeset td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    text-align: center;
+}
+
+.md-typeset tbody tr:hover {
+    background-color: rgba(0, 74, 153, 0.05) !important;
+}
+
+/* --- 7. IMAGE RENDERING & ASPECT RATIO PROTECTION --- */
+
+/* Preserve intrinsic image size; shrink only when the content area is narrower.
+   Leave resampling to the browser instead of forcing a rendering algorithm. */
+.md-typeset img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    image-rendering: auto;
+}
+
+/* --- 8. NEWSLETTER CONTENT & FIGURE FORMATTING --- */
+
+/* Force terminal text to wrap without splitting words */
+.md-typeset pre code {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+    word-wrap: break-word !important;
+    overflow-x: hidden !important;
+    display: block;
+}
+
+/* Use flex layout for figures and keep them within the content area */
+.md-typeset figure {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 1.5em auto !important;
+    max-width: 100% !important;
+}
+
+/* Keep figure images proportional and within the available width */
+.md-typeset figure img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    display: block;
+}
+
+/* Image captions */
+.md-typeset figure figcaption {
+    margin-top: 8px !important;
+    padding-top: 0 !important;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+/* --- 9. MOBILE RESPONSIVENESS --- */
+
+@media screen and (max-width: 45em) {
+    .md-typeset__table {
+        overflow-x: visible !important;
+        display: block !important;
+    }
+
+    .md-typeset table:not([class]) {
+        table-layout: auto !important;
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .md-typeset td,
+    .md-typeset th {
+        font-size: 0.60rem !important;
+        padding: 4px 2px !important;
+        white-space: nowrap !important;
+        min-width: 0 !important;
+        letter-spacing: -0.4px !important;
+    }
+}
